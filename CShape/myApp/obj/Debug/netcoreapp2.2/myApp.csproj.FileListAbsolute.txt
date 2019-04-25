@@ -1,0 +1,11 @@
+/Users/ziyu/VScode/CShape/myApp/bin/Debug/netcoreapp2.2/myApp.deps.json
+/Users/ziyu/VScode/CShape/myApp/bin/Debug/netcoreapp2.2/myApp.runtimeconfig.json
+/Users/ziyu/VScode/CShape/myApp/bin/Debug/netcoreapp2.2/myApp.runtimeconfig.dev.json
+/Users/ziyu/VScode/CShape/myApp/bin/Debug/netcoreapp2.2/myApp.dll
+/Users/ziyu/VScode/CShape/myApp/bin/Debug/netcoreapp2.2/myApp.pdb
+/Users/ziyu/VScode/CShape/myApp/obj/Debug/netcoreapp2.2/myApp.csprojAssemblyReference.cache
+/Users/ziyu/VScode/CShape/myApp/obj/Debug/netcoreapp2.2/myApp.csproj.CoreCompileInputs.cache
+/Users/ziyu/VScode/CShape/myApp/obj/Debug/netcoreapp2.2/myApp.AssemblyInfoInputs.cache
+/Users/ziyu/VScode/CShape/myApp/obj/Debug/netcoreapp2.2/myApp.AssemblyInfo.cs
+/Users/ziyu/VScode/CShape/myApp/obj/Debug/netcoreapp2.2/myApp.dll
+/Users/ziyu/VScode/CShape/myApp/obj/Debug/netcoreapp2.2/myApp.pdb
