@@ -100,7 +100,7 @@ namespace myApp
             // int a = 20;
             // int b = 14;
             // int ret;
-            NumberManipulator n = new NumberManipulator();
+            // NumberManipulator n = new NumberManipulator();
             // ret = n.FindMax(a, b);
             // Console.WriteLine("max number is {0}", ret);
 
@@ -125,18 +125,78 @@ namespace myApp
             // Console.WriteLine("在交换2之后，a 的值： {0}", a);
             // Console.WriteLine("在交换2之后，b 的值： {0}", b);
 
-            int a = 100;
+            // int a = 100;
          
-            Console.WriteLine("在方法调用之前，a 的值： {0}", a);
+            // Console.WriteLine("在方法调用之前，a 的值： {0}", a);
             
             /* 调用函数来获取值 */
-            n.getValue(out a);
+            // n.getValue(out a);
 
-            Console.WriteLine("在方法调用之后，a 的值： {0}", a);
+            // Console.WriteLine("在方法调用之后，a 的值： {0}", a);
 
-            int x, y;
-            n.getValues(out x, out y);
-            Console.WriteLine(" x: {0}, y: {1}", x, y);
+            // int x, y;
+            // n.getValues(out x, out y);
+            // Console.WriteLine(" x: {0}, y: {1}", x, y);
+
+
+            // int ? num1 = null;
+            // int ? num2 = 45;
+            // double ? num3 = new double ? ();
+            // double ? num4 = 3.14157;
+            // bool ? boolval = new bool ? ();
+
+            // Console.WriteLine("显示可空类型的值： {0}, {1}, {2}, {3}", 
+            //                 num1, num2, num3, num4);
+            // Console.WriteLine("一个可空的布尔值： {0}", boolval);
+ 
+            // double[] balance = new double[10];
+
+            // balance[0] = 4500;
+
+            // Console.WriteLine(balance[0]);
+            // Console.WriteLine(balance[1]);
+
+            // int [] n = new int[10];
+            // int i, j;
+
+            // for (i = 0; i < 10; i++)
+            // {
+            //     n[i] = i + 100;
+            // }
+            // for(j=0;j<10;j++)
+            // {
+            //     Console.WriteLine("Element[{0}] = {1}", j, n[j]);
+            // }
+            // // Console.ReadKey();
+
+            // foreach(int x in n)
+            // {
+            //     int y = x - 100;
+            //     Console.WriteLine("element[{0}] = {1}", y,x);
+                
+            // }
+            // 多维数组
+            int [,] a = new int [3,4]
+            {
+                {0,1,2,3},
+                {4,5,6,7},
+                {8,9,10,11}
+            };
+
+            int val = a[2,3];
+            Console.WriteLine("{0}", val);
+
+            int[,] b = new int [ 5,2]
+            {{0,0}, {1,2}, {2,4}, {3,6}, {4,8}};
+
+            int i, j;
+            for (i = 0; i < 5; i ++)
+            {
+                for(j = 0; j < 2; j++)
+                {
+                    Console.WriteLine("a[{0},{1}] = {2}", i, j, b[i,j]);
+                }
+            }
 
 
 
