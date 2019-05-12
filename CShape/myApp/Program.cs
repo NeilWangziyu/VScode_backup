@@ -4,12 +4,26 @@ namespace myApp
 {
     class Program
     {
+        enum Day { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
+
         static void Main(string[] args)
         {   
             // Console.WriteLine("Hello World!\n");
             // Console.WriteLine("The current time is " + DateTime.Now);
             MyClass c1 = new MyClass();
             Console.WriteLine($"Hello World! {c1.ReturnMessage()}");
+
+            int [] balance = new int[] {1000,2,3,17,50};
+            double avg;
+            avg = c1.getAverage(balance, 5);
+
+            Console.WriteLine("mean value is {0}", avg);
+
+            int sumvalue = c1.AddElements(512, 720, 250, 567, 889);
+            Console.WriteLine("the sum of the arr is {0}", sumvalue);
+
+
+
 
             // Rectangle r = new Rectangle();
             // r.Acceptdetails();
@@ -175,29 +189,81 @@ namespace myApp
             //     Console.WriteLine("element[{0}] = {1}", y,x);
                 
             // }
+
             // 多维数组
-            int [,] a = new int [3,4]
+            // int [,] a = new int [3,4]
+            // {
+            //     {0,1,2,3},
+            //     {4,5,6,7},
+            //     {8,9,10,11}
+            // };
+
+            // int val = a[2,3];
+            // Console.WriteLine("{0}", val);
+
+            // int[,] b = new int [ 5,2]
+            // {{0,0}, {1,2}, {2,4}, {3,6}, {4,8}};
+
+            // int i, j;
+            // for (i = 0; i < 5; i ++)
+            // {
+            //     for(j = 0; j < 2; j++)
+            //     {
+            //         Console.WriteLine("a[{0},{1}] = {2}", i, j, b[i,j]);
+            //     }
+            // }
+
+            // 交错数组
+            // 交错数组与二维数组的区别，可以直观的理解为交错数组每一行的长度是可以不一样的。
+
+            // int[][] scores = new int [5][];
+            // for (int k = 0; k < scores.Length; k++)
+            // {
+            //     scores[k] = new int[4];
+            // }
+
+            string fname, lname;
+            fname = "Rowan";
+            lname = "Atkinson";
+            string fullname = fname + lname;
+            Console.WriteLine("Full Name:{0}", fullname);
+
+            char [] letters = {'H', 'e', 'l', 'l', 'o'};
+            string greeetings = new string(letters);
+            Console.WriteLine("Greeting:{0}", greeetings);
+
+            string[] sarray = {"hello", "From", "Tutorials", "points"};
+            string message = String.Join(" ",sarray);
+            Console.WriteLine("MESSAGE:{0}", message);
+
+            DateTime waiting = new DateTime(2012, 10, 10, 17, 58,1);
+            string cat = String.Format("Message sent at {0:t} on {0:D}", waiting);
+            Console.WriteLine("Message: {0}", cat);
+
+
+            string str1 = "this is text";
+            string str2 = "this is text";
+            if (String.Compare(str1, str2)==0)
             {
-                {0,1,2,3},
-                {4,5,6,7},
-                {8,9,10,11}
-            };
-
-            int val = a[2,3];
-            Console.WriteLine("{0}", val);
-
-            int[,] b = new int [ 5,2]
-            {{0,0}, {1,2}, {2,4}, {3,6}, {4,8}};
-
-            int i, j;
-            for (i = 0; i < 5; i ++)
-            {
-                for(j = 0; j < 2; j++)
-                {
-                    Console.WriteLine("a[{0},{1}] = {2}", i, j, b[i,j]);
-                }
+                Console.WriteLine(str1 + " and " + str2 +  " are equal.");
+            }
+            else{
+                Console.WriteLine(str1 + " and " + str2 + " are not equal.");
             }
 
+            if (str1.Contains("text"))
+            {
+                Console.WriteLine("The sequence 'test' was found.");
+            }
+
+            int x = (int)Day.Sun;
+            int y = (int)Day.Fri;
+            Console.WriteLine("Sun = {0}", x);
+            Console.WriteLine("Fri = {0}", y);
+
+
+
+            
 
 
 
