@@ -4,6 +4,10 @@ namespace myApp
     class RectangleNew
     {
         private double length;
+        // private：private表示私有，私有的意思就是除了class自己之外，任何人都不可以直接使用，
+        // 即便是子女，朋友，都不可以使用。
+        // protected：protected对于子女、朋友来说，就是public的，可以自由使用，没有任何限制，
+        // 而对于其他的外部class，protected就变成private
         private double width;
         public void Acceptdetails()
         {
